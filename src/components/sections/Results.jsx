@@ -32,18 +32,18 @@ const Results = () => {
   ];
 
   return (
-    <AnimatedSection className="py-20 md:py-32 bg-black">
+    <AnimatedSection className="py-20 md:py-32 bg-transparent">
       <div className="container mx-auto px-6">
         <MotionElement as="h2" className="text-4xl md:text-6xl font-black text-center mb-16">
           Menos ruido,<br />
           <span className="text-cyan-400">más resultados.</span>
         </MotionElement>
-        
+
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-5xl mx-auto">
           {resultsData.map((result, index) => (
-            <ResultCard 
+            <ResultCard
               key={index}
-              imgSrc={result.imgSrc} 
+              imgSrc={result.imgSrc}
               title={result.title}
             />
           ))}

@@ -31,22 +31,12 @@ const Hero = () => {
           Diseño web premium y estrategias digitales para marcas que exigen <strong className="font-semibold text-white">destacar</strong> y <strong className="font-semibold text-white">multiplicar sus resultados</strong>.
         </MotionElement>
 
-        <MotionElement as="div" className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto items-center">
+        <MotionElement as="div" className="flex justify-center w-full">
           <button
             onClick={() => window.open('https://eurekaestudiocreativo.com/contacto/', '_blank')}
             className="w-full sm:w-auto bg-cyan-400 text-black font-bold text-lg py-4 px-8 rounded-xl hover:bg-cyan-300 hover:-translate-y-1 transition-all duration-300 shadow-[0_0_30px_rgba(34,211,238,0.3)] hover:shadow-[0_0_40px_rgba(34,211,238,0.5)]"
           >
             Agenda tu Diagnóstico
-          </button>
-
-          <button
-            onClick={() => {
-              const el = document.getElementById('diagnosis');
-              if (el) el.scrollIntoView({ behavior: 'smooth' });
-            }}
-            className="w-full sm:w-auto bg-white/5 border border-white/20 text-white font-medium text-lg py-4 px-8 rounded-xl hover:bg-white/10 hover:border-white/40 transition-all duration-300 backdrop-blur-sm"
-          >
-            Descubre el método
           </button>
         </MotionElement>
       </div>

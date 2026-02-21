@@ -46,7 +46,7 @@ const Growth = () => {
   };
 
   return (
-    <AnimatedSection className="pt-8 pb-20 md:py-32 bg-black">
+    <AnimatedSection className="pt-8 pb-20 md:py-32 bg-transparent">
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
         {/* Left Column: Text Content */}
         <div className="text-left md:order-1 order-2">

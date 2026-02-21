@@ -11,7 +11,7 @@ import Results from '@/components/sections/Results';
 import LogoCloud from '@/components/sections/LogoCloud';
 import CTA from '@/components/sections/CTA';
 import Footer from '@/components/sections/Footer';
-import Fireflies from '@/components/layout/Fireflies';
+import Particles from '@/components/layout/Particles';
 import { SplineSceneFooter } from '@/components/sections/SplineSceneFooter';
 import ChatWidget from '@/components/ChatWidget';
 
@@ -23,10 +23,10 @@ function App() {
         <meta name="description" content="Integramos comunicación creativa con tecnología inteligente para que destaques en un mercado ruidoso y conviertas el interés en ventas reales. Agenda tu diagnóstico estratégico." />
       </Helmet>
 
-      <div className="relative">
-        <Fireflies />
+      <div className="relative bg-black min-h-screen">
+        <Particles />
         <Header />
-        <main className="min-h-screen bg-black text-white font-sans overflow-x-hidden relative z-10">
+        <main className="min-h-screen text-white font-sans overflow-x-hidden relative z-10 bg-transparent">
           <Hero />
           <LogoCloud />
           <div className="md:mt-20">

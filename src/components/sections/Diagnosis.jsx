@@ -23,7 +23,7 @@ const Diagnosis = () => {
   };
 
   return (
-    <AnimatedSection className="py-20 bg-black">
+    <AnimatedSection className="py-20 bg-transparent">
       <div className="container mx-auto px-6">
         <motion.h2
           className="text-4xl md:text-6xl font-black text-center mb-16"
@@ -43,9 +43,10 @@ const Diagnosis = () => {
             onMouseEnter={() => setIsRuidoHovered(true)}
             onMouseLeave={() => setIsRuidoHovered(false)}
           >
-            {/* Background Image Setup */}
+            {/* Background Setup with CSS Gradients for robustness */}
             <div className="absolute inset-0 z-0 transition-transform duration-700 group-hover:scale-105">
-              <img src="/noise_bg.png" alt="Digital noise" className="w-full h-full object-cover opacity-40 mix-blend-screen" />
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(34,211,238,0.15),transparent)]"></div>
+              <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20 mix-blend-overlay"></div>
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
             </div>
 
@@ -85,9 +86,10 @@ const Diagnosis = () => {
             onMouseEnter={() => setIsFugaHovered(true)}
             onMouseLeave={() => setIsFugaHovered(false)}
           >
-            {/* Background Image Setup */}
+            {/* Background Setup with CSS Gradients for robustness */}
             <div className="absolute inset-0 z-0 transition-transform duration-700 group-hover:scale-105">
-              <img src="/leak_bg.png" alt="Time leak" className="w-full h-full object-cover opacity-40 mix-blend-screen" />
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(59,130,246,0.15),transparent)]"></div>
+              <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20 mix-blend-overlay"></div>
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
             </div>
 
