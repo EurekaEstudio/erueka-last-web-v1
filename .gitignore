@@ -1,0 +1,40 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/dist
+
+# misc
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project specific
+branding/
+brand_growth_visualization.png
+noise_bg.png
+leak_bg.png
+noise_abstract_bg_*.png
+leak_abstract_bg_*.png
+hero_test_*.webp
+localhost_page_initial_*.png
+verify_local_server_*.webp
+screencapture-web-eurekaestudiocreativo-*.png
